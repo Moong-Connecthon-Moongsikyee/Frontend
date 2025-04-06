@@ -41,8 +41,8 @@ const RoleSelection = () => {
                 key={role.id}
                 className={`border rounded-lg p-4 cursor-pointer transition-colors ${
                   selectedRole === role.id
-                    ? 'border-violet-500 bg-violet-50'
-                    : 'border-gray-200 hover:border-violet-300 hover:bg-violet-50'
+                    ? 'border-[#347A24] bg-[#347A24]/10'
+                    : 'border-[#347A24]/40 hover:border-[#347A24] hover:bg-[#347A24]/10'
                 }`}
                 onClick={() => handleRoleSelect(role.id)}
               >
