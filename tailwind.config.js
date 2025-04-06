@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         RiaSans: ['RiaSans-ExtraBold'],
+        sans: [ 'Pretendard-Regular'],
       },
 
       colors: {

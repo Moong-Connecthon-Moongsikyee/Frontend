@@ -6,17 +6,21 @@ import Button from '../../components/common/Button';
 
 const Landing = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
-      <main className="flex-column pt-[100px]">
+      <main className=" flex flex-col justify-center flex-1 ">
         <div className="pl-[44px] ">
 
-          <div className= "display: inline text-[7rem] font-RiaSans text-ag-green">커리어로</div>
+          <div className= "inline text-[7rem] font-RiaSans text-ag-green">커리어로</div>
           <p className="text-xl text-gray-600 mb-8">성장을 위한 진로탐색, 커리어로와 함께하세요.</p>
           <Link to="/login">
-            <Button className="px-8 py-3 text-lg ">역량 진단 바로가기 버튼</Button>
+            <Button className="mr-[15px] px-8 py-3 text-lg ">로드맵 바로가기</Button>
           </Link>
-          
+          <Button 
+          variant="custom"
+          className=" px-8 py-3 text-lg bg-white text-[#4C4C4C] border border-[#4C4C4C]">
+            아직 로드맵이 없어요 
+            </Button>
         </div>
         
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
