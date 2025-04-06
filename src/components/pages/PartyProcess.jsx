@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../../components/layout/Header';
-import Sidebar from '../../components/layout/Sidebar';
 import Card from '../../components/common/Card';
 import Button from '../../components/common/Button';
 
@@ -11,6 +10,8 @@ const PartyProcess = () => {
   const navigate = useNavigate();
   const [progress, setProgress] = useState(0);
   
+
+
   // 직무별 필요 역량 및 질문 데이터
   const careerPaths = {
     '프론트엔드 개발자': {
@@ -272,8 +273,8 @@ const PartyProcess = () => {
                   key={option}
                   className={`p-6 rounded-lg border-2 text-left transition-all ${
                     answers[`role`] === option
-                      ? 'border-violet-500 bg-violet-50 shadow-md'
-                      : 'border-gray-200 hover:border-violet-300 hover:bg-gray-50'
+                      ? 'border-[#347A24] bg-[#347A24]/10 shadow-md'
+                      : 'border-[#347A24]/40 hover:border-[#347A24] hover:bg-[#347A24]/10'
                   }`}
                   onClick={() => handleOptionSelect('role', option)}
                 >
@@ -412,7 +413,6 @@ const PartyProcess = () => {
   
   return (
     <div className="min-h-screen bg-gray-50 flex">
-      <Sidebar />
       <div className="flex-1">
         <Header />
         <main className="max-w-5xl mx-auto px-4 py-8">
